@@ -91,3 +91,4 @@ async def cmd_rate(message: Message):
 @router.message(Command('joke'))
 async def cmd_joke(message: Message):
     await message.reply("There is no jokes!")
+    await message.answer("ahahaha")
