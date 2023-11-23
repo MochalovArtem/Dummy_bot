@@ -87,3 +87,7 @@ async def cmd_rate(message: Message):
                         f"1RUB = "
                         f"{((sum_buy / Decimal('10.00')) / (sum_sell / Decimal('10.00'))).quantize(Decimal('1.00'), ROUND_HALF_DOWN)} THB")
 
+
+@router.message(Command('joke'))
+async def cmd_joke(message: Message):
+    await message.reply("There is no jokes!")
